@@ -3,7 +3,7 @@
 This ExtentReport test framework based on [extentreports](https://extentreports.com/)
 
 ### Run tests
-    ```mvn clean test```
+    ``` mvn clean test ```
 This will generate the extent html report under test-outout folder
 
 > Update the extent.properties file.
