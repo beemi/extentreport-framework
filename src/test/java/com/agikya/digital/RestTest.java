@@ -9,13 +9,13 @@ import org.testng.annotations.Test;
 @Listeners({ExtentITestListenerClassAdapter.class})
 public class RestTest {
 
-    @Test
+    @Test(groups = {"passtest", "t:DOVE-500", "a:Raja Beemi"})
     public void passTest() {
 
         Assert.assertEquals(5,3+2);
     }
 
-    @Test
+    @Test(groups = {"Failtest", "t:DOVE-501", "a:Raja Beemi"})
     public void failTest() {
 
 
