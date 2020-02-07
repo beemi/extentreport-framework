@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Feb 6, 2020 10:33:22 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Feb 7, 2020 09:22:23 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -108,10 +108,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -122,10 +122,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -143,24 +143,102 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>RestTest</span>
+						<span class='test-time'>Feb 7, 2020 09:22:23 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Feb 7, 2020 09:22:23 AM</span>
+	<span class='label end-time'>Feb 7, 2020 09:22:23 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+15ms</span>
+</div>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+	<li class='node level-1 leaf pass' status='pass' test-id='2'>
+		<div class='collapsible-header'>
+			<div class='node-name'>failTest</div>
+			<span class='node-time'>Feb 7, 2020 09:22:23 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+5ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+		<div class='collapsible-body'>
+			<div class='node-steps'>
+				<table class='bordered table-results'>
+					<thead>
+						<tr>
+							<th>Status</th>
+							<th>Timestamp</th>
+							<th>Details</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class='log' status='pass'>
+							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+							<td class='timestamp'>9:22:23 AM</td>
+							<td class='step-details'>
+									Test passed
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</li>
+	<li class='node level-1 leaf pass' status='pass' test-id='3'>
+		<div class='collapsible-header'>
+			<div class='node-name'>passTest</div>
+			<span class='node-time'>Feb 7, 2020 09:22:23 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+1ms</span>
+			<span class='test-status right pass'>pass</span>
+		</div>
+		<div class='collapsible-body'>
+			<div class='node-steps'>
+				<table class='bordered table-results'>
+					<thead>
+						<tr>
+							<th>Status</th>
+							<th>Timestamp</th>
+							<th>Details</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class='log' status='pass'>
+							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+							<td class='timestamp'>9:22:23 AM</td>
+							<td class='step-details'>
+									Test passed
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</li>
+</ul>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>SimpleTest</span>
-						<span class='test-time'>Feb 6, 2020 10:33:23 PM</span>
+						<span class='test-time'>Feb 7, 2020 09:22:23 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 6, 2020 10:33:23 PM</span>
-	<span class='label end-time'>Feb 6, 2020 10:33:23 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+29ms</span>
+	<span class='label start-time'>Feb 7, 2020 09:22:23 AM</span>
+	<span class='label end-time'>Feb 7, 2020 09:22:23 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+12ms</span>
 </div>
 <ul class='collapsible node-list' data-collapsible='accordion'>
-	<li class='node level-1 leaf fail' status='fail' test-id='2'>
+	<li class='node level-1 leaf fail' status='fail' test-id='5'>
 		<div class='collapsible-header'>
 			<div class='node-name'>failTest</div>
-			<span class='node-time'>Feb 6, 2020 10:33:23 PM</span>
-			&middot; <span class='node-duration'>0h 0m 0s+10ms</span>
+			<span class='node-time'>Feb 7, 2020 09:22:23 AM</span>
+			&middot; <span class='node-duration'>0h 0m 0s+5ms</span>
 			<span class='test-status right fail'>fail</span>
 		</div>
 		<div class='collapsible-body'>
@@ -176,7 +254,7 @@
 					<tbody>
 						<tr class='log' status='fail'>
 							<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-							<td class='timestamp'>10:33:23 PM</td>
+							<td class='timestamp'>9:22:23 AM</td>
 							<td class='step-details'>
 									<pre>java.lang.AssertionError: expected [5] but found [2]
 	at org.testng.Assert.fail(Assert.java:97)
@@ -210,8 +288,14 @@
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
 	at org.testng.TestNG.runSuites(TestNG.java:1039)
 	at org.testng.TestNG.run(TestNG.java:1007)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre>
 								
 							</td>
@@ -221,10 +305,10 @@
 			</div>
 		</div>
 	</li>
-	<li class='node level-1 leaf pass' status='pass' test-id='3'>
+	<li class='node level-1 leaf pass' status='pass' test-id='6'>
 		<div class='collapsible-header'>
 			<div class='node-name'>passTest</div>
-			<span class='node-time'>Feb 6, 2020 10:33:23 PM</span>
+			<span class='node-time'>Feb 7, 2020 09:22:23 AM</span>
 			&middot; <span class='node-duration'>0h 0m 0s+0ms</span>
 			<span class='test-status right pass'>pass</span>
 		</div>
@@ -241,7 +325,7 @@
 					<tbody>
 						<tr class='log' status='pass'>
 							<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-							<td class='timestamp'>10:33:23 PM</td>
+							<td class='timestamp'>9:22:23 AM</td>
 							<td class='step-details'>
 									Test passed
 								
@@ -311,8 +395,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 6, 2020 10:33:23 PM</td>
-										<td class='linked' test-id='2'>SimpleTest.failTest</td>
+										<td>Feb 7, 2020 09:22:23 AM</td>
+										<td class='linked' test-id='5'>SimpleTest.failTest</td>
 										<td>
 											<pre>java.lang.AssertionError: expected [5] but found [2]
 	at org.testng.Assert.fail(Assert.java:97)
@@ -346,8 +430,14 @@
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
 	at org.testng.TestNG.runSuites(TestNG.java:1039)
 	at org.testng.TestNG.run(TestNG.java:1007)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre>
 										</td>
 									</tr>
@@ -373,25 +463,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
-				</div>
-			</div>
-			<div class='col s2'>
-				<div class='card-panel r'>
-					Steps
 					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>4</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 6, 2020 10:33:22 PM</div>
+					<div class='panel-lead'>Feb 7, 2020 09:22:23 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 6, 2020 10:33:22 PM</div>
+			 		<div class='panel-lead'>Feb 7, 2020 09:22:23 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -408,7 +498,7 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-				passParent: 0,
+				passParent: 1,
 				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
@@ -416,7 +506,7 @@
 				skipParent: 0,
 				exceptionsParent: 1,
 				
-				passChild: 1,
+				passChild: 3,
 				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
@@ -439,7 +529,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "SimpleTest":0.029
+			        "RestTest":0.015,"SimpleTest":0.012
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/e9ccc29bd18c7914697075f44948d0913e462478/v3html/js/extent.js' type='text/javascript'></script>
