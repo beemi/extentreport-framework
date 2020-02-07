@@ -9,22 +9,22 @@ import org.testng.annotations.Test;
 @Listeners({ExtentITestListenerClassAdapter.class})
 public class SimpleTest {
 
-    @Test(groups = {"t:DOVE-502", "a:Raja Beemi"})
+    @Test(groups = {"tag:DOVE-502", "author:Raja Beemi", "device:Android"})
     public void passTest() {
 
-        Assert.assertEquals(5,3+2);
+        Assert.assertEquals(5, 3 + 2);
     }
 
-    @Test(groups = {"SimpleTest002Tag", "t:DOVE-503", "a:Raja Beemi"})
+    @Test(groups = {"SimpleTest002Tag", "t:DOVE-503", "a:Raja Beemi", "d:Iphone"})
     public void failTest() {
 
-        Assert.assertEquals(2,3+2);
+        Assert.assertEquals(2, 3 + 2);
     }
 
     @Test
     @Ignore
     public void skipTest() {
 
-        Assert.assertEquals(2,3+2);
+        Assert.assertEquals(2, 3 + 2);
     }
 }
